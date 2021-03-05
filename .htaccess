@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^abaut_me/?$ abaut_me.html
+RewriteRule ^services/?$ services.html
+RewriteRule ^skills/?$ skills.html
+RewriteRule ^projects/?$ projects.html

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* Barra */
+.barra {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 15px 0;
+    background: rgb(0, 0, 0);
+    font-family: 'Ubuntu', sans-serif;
+}
+.barra .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.barra .logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.barra .menu li {
+    list-style: none;
+    display: inline-block;
+}
+.barra .menu li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.barra .menu li a:hover{
+    color: blueviolet;
+}
+/* Barrita para moviles */
+.barra-btn {
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Codigos similares */
+section
+{
+    padding: 100px 0;
+}
+.abaut, footer
+{
+    font-family: 'Poppins', sans-serif;
+}
+.abaut .abaut-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title
+{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 6px;
+    background: #450ca0;
+    transform: translateX(-50%);
+}
+
+/* Sobre mi */
+.abaut
+{
+    color: rgb(0, 0, 0);
+}
+.abaut .abaut-content .left
+{
+    width: 45%;
+}
+.abaut .abaut-content .left img
+{
+    height: 490px;
+    width: 460px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.abaut .abaut-content .right
+{
+    width: 50%;
+}
+.abaut .abaut-content .right .texto
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.abaut .abaut-content .right .texto span
+{
+    color: rgb(84, 39, 157);
+}
+.abaut .abaut-content .right p
+{
+    text-align: justify;
+}
+.abaut .abaut-content .right .texto
+{
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 1300px){
+    .inicio .max-width{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 1050px){
+    .max-width {
+        padding: 0 50px;
+    }
+    .abaut .abaut-content .left img
+    {
+        height: 600px;
+        width: 600px;
+    }
+    .abaut .abaut-content .column
+    {
+        width: 100%;
+    }
+    .abaut .abaut-content .left
+    {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .abaut .abaut-content .right
+    {
+        flex: 100%;
+    }
+    
+}
+@media (max-width: 947px){
+    .max-width {
+        padding: 0 50px;
+    }
+    .barra-btn{
+        display: block;
+        z-index: 999;
+    }
+    .barra .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .barra .menu.active{
+        left: 0;
+    }
+    .barra .menu li{
+        display: block;
+    }
+    .barra .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .abaut .abaut-content .column
+    {
+        width: 100%;
+    }
+    .abaut .abaut-content .left
+    {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .abaut .abaut-content .right
+    {
+        flex: 100%;
+    }
+}
+@media (max-width: 660px){
+    .abaut .abaut-content .left img
+    {
+        height: 400px;
+        width: 400px;
+    }
+    .abaut .abaut-content .column
+    {
+        width: 100%;
+    }
+    .abaut .abaut-content .left
+    {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .abaut .abaut-content .right
+    {
+        flex: 100%;
+    }
+}
+@media (max-width: 450px){
+    .abaut .abaut-content .left img
+    {
+        height: 300px;
+        width: 300px;
+    }
+}
